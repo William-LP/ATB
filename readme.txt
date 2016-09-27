@@ -13,20 +13,16 @@ CONTENTS OF THIS FILE
 I. Introduction
 ---------------
 
-    ATB is a sysadmin tool which allow you to run complex command very easily on a remote computer.
+    ATB is a sysadmin tool which allows you to run complex commands very easily on a remote computer.
 
-    * For a full description of the module, visit the project page:
-        	http://www.atb-project.hostoi.com
-
-    * To submit bug reports and feature suggestions, or to track changes:
-	        contact@atb-project.hostoi.com
-	        https://github.com/AdminToolsBox
+    * The project isn't supported anymore but if you wish to contact me about it : 
+    	william.lepommelet@gmail.com
 
 
 II. Licence
 -----------
 
-    This program is free software: you can redistribute it and/or modify
+    This program is a free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -44,8 +40,8 @@ III. Requirements
 ------------------
 
     This program can be run on a LINUX OS (certified for Debian and Mint).
-    Some additional components could be install for a good execution of several scripts.
-    These programs are describe in the next section.
+    Some additional components could be installed for a good execution of several scripts.
+    These programs are described in the next section.
 
 
 IV. Recommended modules
@@ -58,17 +54,48 @@ IV. Recommended modules
 V. Installation
 ---------------
 
-    For the moment no installation file exist, but you can run the scripts file one by one.
-    In a close moment you'll be able to only run the Makefile, and all the scripts will be set 
-    automaticly. All you'll have to do will be to type ATB 'command' in the prompt to use to
-    program very easily.
+    Steps to install atb:
+	1. Open a command prompt
+	2. Change directory to the admin-tools-box-atb directory
+		"cd TheNameOfTheDownloadedDirectory"
+	3. Run "chmod +x ./configure" && ./configure
+	4. Run "sudo make install"
+	5. Run "atb"
 
 
 VI. File list
 ------------
 
-  
-    README		This file
+ a). Scripts
+ ----------
+    alive		Allow to see on an IP range which are the host alive (pingable)
+    infosys             Allow to get information on a remote computer
+    taskkill            Task Manager which allow you to see the main tasks running, search one specific and kill it.
+
+ b). Library
+ -----------
+    alxdr-lib 		Functions library which is called for most of these scripts
+    i18n-lib		Library wich allow the internationalisation
+    
+ c). Internazionalisation
+ ------------------------
+    alive.mo            Allow multilanguage on the script "alive"
+    alive.po		Allow multilanguage on the script "alive"
+    infosys.mo          Allow mutlilanguage on the script "infosys"
+    infosys.po  	Allow multilanguage on the script "infosys"
+    taskkill.mo		Allow multilanguage on the script "taskkill"
+    taskkill.po		Allow multilanguage on the script "taskkill"
+
+ d). Documentation
+ -----------------
+    You have some file named by and .html extension which aren't listed here.
+
+ e). Others
+ ----------
+    ATB.conf		File with user preferences (language / gui enable or not)
+    readme.txt		Thile file
+    server.list		File with the servers available for the remote access
+
 
 
 
